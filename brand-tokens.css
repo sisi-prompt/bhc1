@@ -1,0 +1,174 @@
+/* ============================================
+   BRAND TOKENS — SOCIAL MEDIA DESIGN SYSTEM
+   Always use these styles. Never substitute.
+   ============================================ */
+
+
+/* --------------------------------------------
+   FONTS — @font-face Declarations
+   Served via Adobe Typekit
+   -------------------------------------------- */
+
+/* Heading — Proxima Nova Medium, Uppercase */
+@font-face {
+  font-family: proxima-nova;
+  src: url(https://use.typekit.net/af/3888dc/00000000000000007735e606/31/l?subset_id=2&fvd=n3&v=3) format("woff2"),
+       url(https://use.typekit.net/af/3888dc/00000000000000007735e606/31/d?subset_id=2&fvd=n3&v=3) format("woff"),
+       url(https://use.typekit.net/af/3888dc/00000000000000007735e606/31/a?subset_id=2&fvd=n3&v=3) format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: auto;
+}
+
+/* Sub-heading / Subtitles — Adobe Garamond Pro, Italic */
+@font-face {
+  font-family: adobe-garamond-pro;
+  src: url(https://use.typekit.net/af/1a756d/00000000000000007735d927/31/l?subset_id=2&fvd=n4&v=3) format("woff2"),
+       url(https://use.typekit.net/af/1a756d/00000000000000007735d927/31/d?subset_id=2&fvd=n4&v=3) format("woff"),
+       url(https://use.typekit.net/af/1a756d/00000000000000007735d927/31/a?subset_id=2&fvd=n4&v=3) format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+  font-display: auto;
+}
+
+/* Body — Adobe Garamond Pro, Regular */
+@font-face {
+  font-family: adobe-garamond-pro;
+  src: url(https://use.typekit.net/af/1a756d/00000000000000007735d927/31/l?subset_id=2&fvd=n4&v=3) format("woff2"),
+       url(https://use.typekit.net/af/1a756d/00000000000000007735d927/31/d?subset_id=2&fvd=n4&v=3) format("woff"),
+       url(https://use.typekit.net/af/1a756d/00000000000000007735d927/31/a?subset_id=2&fvd=n4&v=3) format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: auto;
+}
+
+/* Section Header — Proxima Nova, Uppercase, Letter-spaced */
+@font-face {
+  font-family: proxima-nova;
+  src: url(https://use.typekit.net/af/3888dc/00000000000000007735e606/31/l?subset_id=2&fvd=n3&v=3) format("woff2"),
+       url(https://use.typekit.net/af/3888dc/00000000000000007735e606/31/d?subset_id=2&fvd=n3&v=3) format("woff"),
+       url(https://use.typekit.net/af/3888dc/00000000000000007735e606/31/a?subset_id=2&fvd=n3&v=3) format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: auto;
+}
+
+/* Accent & Buttons — Proxima Nova Light */
+@font-face {
+  font-family: proxima-nova;
+  src: url(https://use.typekit.net/af/3888dc/00000000000000007735e606/31/l?subset_id=2&fvd=n3&v=3) format("woff2"),
+       url(https://use.typekit.net/af/3888dc/00000000000000007735e606/31/d?subset_id=2&fvd=n3&v=3) format("woff"),
+       url(https://use.typekit.net/af/3888dc/00000000000000007735e606/31/a?subset_id=2&fvd=n3&v=3) format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: auto;
+}
+
+
+/* --------------------------------------------
+   DESIGN TOKENS — CSS Variables
+   -------------------------------------------- */
+
+:root {
+
+  /* --- FONT FAMILIES --- */
+  --font-heading:    proxima-nova, sans-serif;     /* Headings */
+  --font-subheading: adobe-garamond-pro, serif;    /* Sub-headings / Subtitles */
+  --font-body:       adobe-garamond-pro, serif;    /* Body Text */
+  --font-section:    proxima-nova, sans-serif;     /* Section Headers */
+  --font-accent:     proxima-nova, sans-serif;     /* Accents & Buttons */
+
+  /* --- FONT WEIGHTS --- */
+  --font-weight-heading:    500;
+  --font-weight-subheading: 400;
+  --font-weight-body:       400;
+  --font-weight-section:    400;
+  --font-weight-accent:     300;
+
+  /* --- FONT STYLES --- */
+  --font-style-heading:    normal;
+  --font-style-subheading: italic;
+  --font-style-body:       normal;
+  --font-style-section:    normal;
+  --font-style-accent:     normal;
+
+  /* --- LETTER SPACING --- */
+  --letter-spacing-heading: 0px;
+  --letter-spacing-section: 2px;
+
+  /* --- TEXT TRANSFORM --- */
+  --text-transform-heading: uppercase;
+  --text-transform-section: uppercase;
+
+  /* --- LINE HEIGHT --- */
+  --line-height-heading:    0.9em;
+  --line-height-subheading: 1em;
+  --line-height-section:    1em;
+  --line-height-body:       1.5em;
+
+
+  /* --- BACKGROUND COLORS --- */
+  --color-bg-white:  #FFFFFF;   /* White */
+  --color-bg-teal:   #00746b;   /* Brand Teal */
+  --color-bg-dark:   #333333;   /* Dark Gray */
+  --color-bg-light:  #d9d9d9;   /* Light Gray */
+
+  /* --- TEXT COLORS --- */
+  --color-text-primary:   #1f1f1f;  /* Near-black — default text */
+  --color-text-secondary: #ffffff;  /* White — text on dark/teal backgrounds */
+
+  /* --- ACCENT COLORS --- */
+  --color-accent-teal: #00746b;  /* Brand Teal */
+  --color-accent-gray: #d9d9d9;  /* Light Gray */
+
+}
+
+
+/* --------------------------------------------
+   TYPOGRAPHY ROLES — Ready-to-use classes
+   -------------------------------------------- */
+
+.heading {
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-heading);
+  font-style: var(--font-style-heading);
+  letter-spacing: var(--letter-spacing-heading);
+  text-transform: var(--text-transform-heading);
+  line-height: var(--line-height-heading);
+}
+
+.subheading {
+  font-family: var(--font-subheading);
+  font-weight: var(--font-weight-subheading);
+  font-style: var(--font-style-subheading);
+  letter-spacing: 0px;
+  text-transform: none;
+  line-height: var(--line-height-subheading);
+}
+
+.body-text {
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-body);
+  font-style: var(--font-style-body);
+  text-transform: none;
+  line-height: var(--line-height-body);
+}
+
+.section-header {
+  font-family: var(--font-section);
+  font-weight: var(--font-weight-section);
+  font-style: var(--font-style-section);
+  letter-spacing: var(--letter-spacing-section);
+  text-transform: var(--text-transform-section);
+  line-height: var(--line-height-section);
+}
+
+.accent, button, .btn {
+  font-family: var(--font-accent);
+  font-weight: var(--font-weight-accent);
+  font-style: var(--font-style-accent);
+}
